@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ImageProductCell" customModule="Altima" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qbG-aB-rtq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="240" id="QrG-1S-6GS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx5-ub-LK8">
+                        <rect key="frame" x="0.0" y="240" width="320" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIL-vB-MCN">
+                        <rect key="frame" x="0.0" y="321" width="320" height="18.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUk-Z6-Rdb">
+                        <rect key="frame" x="18" y="267" width="284" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Company" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-aL-HO7">
+                        <rect key="frame" x="0.0" y="294" width="320" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FIL-vB-MCN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4W3-nk-xyX"/>
+                    <constraint firstItem="BUk-Z6-Rdb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="52T-IA-GtP"/>
+                    <constraint firstItem="qbG-aB-rtq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HKr-S0-9BY"/>
+                    <constraint firstAttribute="trailing" secondItem="rfr-aL-HO7" secondAttribute="trailing" id="Heq-aq-VZL"/>
+                    <constraint firstAttribute="trailing" secondItem="Fx5-ub-LK8" secondAttribute="trailing" id="Kuc-Wk-f0B"/>
+                    <constraint firstAttribute="bottom" secondItem="FIL-vB-MCN" secondAttribute="bottom" id="PR9-sg-Gz5"/>
+                    <constraint firstItem="BUk-Z6-Rdb" firstAttribute="top" secondItem="Fx5-ub-LK8" secondAttribute="bottom" constant="10" id="Qth-dW-N24"/>
+                    <constraint firstItem="rfr-aL-HO7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="W0x-Zc-d9H"/>
+                    <constraint firstItem="Fx5-ub-LK8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Xpl-Yn-z47"/>
+                    <constraint firstAttribute="trailing" secondItem="qbG-aB-rtq" secondAttribute="trailing" id="f8h-D8-Vf7"/>
+                    <constraint firstItem="Fx5-ub-LK8" firstAttribute="top" secondItem="qbG-aB-rtq" secondAttribute="bottom" id="mTQ-TG-vmq"/>
+                    <constraint firstItem="FIL-vB-MCN" firstAttribute="top" secondItem="rfr-aL-HO7" secondAttribute="bottom" constant="10" id="qZd-HF-fYy"/>
+                    <constraint firstAttribute="trailing" secondItem="FIL-vB-MCN" secondAttribute="trailing" id="rs1-d1-4KH"/>
+                    <constraint firstItem="rfr-aL-HO7" firstAttribute="top" secondItem="BUk-Z6-Rdb" secondAttribute="bottom" constant="10" id="yDt-9U-EWT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BUk-Z6-Rdb" secondAttribute="trailing" constant="10" id="yTh-E1-LBr"/>
+                    <constraint firstItem="qbG-aB-rtq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yrh-nJ-7cO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="company" destination="rfr-aL-HO7" id="lma-jP-p6E"/>
+                <outlet property="imageProduct" destination="qbG-aB-rtq" id="5t7-Wm-GLk"/>
+                <outlet property="nameProduct" destination="Fx5-ub-LK8" id="85M-l7-49E"/>
+                <outlet property="priceProduct" destination="BUk-Z6-Rdb" id="nL0-QI-aQ5"/>
+                <outlet property="titleProduct" destination="FIL-vB-MCN" id="hBE-pA-PQf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

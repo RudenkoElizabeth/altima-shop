@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AuthView" customModule="Altima" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j8-zR-gqn">
+                    <rect key="frame" x="0.0" y="30" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6yX-DC-NB5"/>
+                    </constraints>
+                    <state key="normal" title="Авторизоваться">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndU-rn-hkM">
+                    <rect key="frame" x="0.0" y="100" width="375" height="50"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="B2m-m7-6vH"/>
+                        <constraint firstAttribute="height" constant="50" id="jrx-g7-TFo"/>
+                    </constraints>
+                    <state key="normal" title="Зарегистрироваться">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5j8-zR-gqn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0hC-dK-dJe"/>
+                <constraint firstAttribute="trailing" secondItem="ndU-rn-hkM" secondAttribute="trailing" id="7qb-T4-0xA"/>
+                <constraint firstItem="5j8-zR-gqn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="J9P-iO-5bR"/>
+                <constraint firstItem="ndU-rn-hkM" firstAttribute="top" secondItem="5j8-zR-gqn" secondAttribute="bottom" constant="20" id="s7j-A9-33T"/>
+                <constraint firstItem="ndU-rn-hkM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v7v-yj-Kkv"/>
+                <constraint firstAttribute="trailing" secondItem="5j8-zR-gqn" secondAttribute="trailing" id="y7F-Lq-9MO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="logInButton" destination="5j8-zR-gqn" id="Nfd-UW-oCm"/>
+                <outlet property="signUpButton" destination="ndU-rn-hkM" id="FZw-EI-KF7"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="138"/>
+        </view>
+    </objects>
+</document>
